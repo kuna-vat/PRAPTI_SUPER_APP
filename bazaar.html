@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAPTI BAZAAR - Grocery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+
+    <div class="top-header">
+
+        <div class="logo">
+            <a href="index.html">
+                <h2>🛒 PRAPTI BAZAAR</h2>
+            </a>
+        </div>
+
+        <div class="search-box">
+            <input type="text"
+                   placeholder="Search grocery products...">
+
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+        <div class="header-icons">
+
+            <a href="wishlist.html">
+                <i class="fa fa-heart"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+
+            <a href="login.html">
+                <i class="fa fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="bazaar.html">Grocery</a>
+        <a href="offers.html">Offers</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<!-- Banner -->
+
+<section class="page-banner">
+
+    <h1>PRAPTI BAZAAR Grocery</h1>
+
+    <p>Fresh Products At Best Price</p>
+
+</section>
+
+<!-- Categories -->
+
+<section class="categories">
+
+    <h2>Categories</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            🥛
+            <h3>Dairy</h3>
+        </div>
+
+        <div class="category-card">
+            🥤
+            <h3>Beverages</h3>
+        </div>
+
+        <div class="category-card">
+            🍪
+            <h3>Snacks</h3>
+        </div>
+
+        <div class="category-card">
+            🌾
+            <h3>Grocery</h3>
+        </div>
+
+        <div class="category-card">
+            🧂
+            <h3>Masala</h3>
+        </div>
+
+        <div class="category-card">
+            🧼
+            <h3>Cleaning</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Products -->
+
+<section class="products">
+
+    <h2>All Grocery Products</h2>
+
+    <div class="product-grid" id="product-list">
+        <div class="product-card">
+
+            <img src="images/cookme-haldi.jpg" alt="Cookme Haldi Powder">
+
+            <h3>Cookme Haldi Powder</h3>
+
+            <p class="price">₹35</p>
+
+            <button class="add-cart"
+                onclick="addToCart('Cookme Haldi Powder',35,'images/cookme-haldi.jpg')">
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="images/amul-butter.jpg" alt="Amul Butter 100g">
+
+            <h3>Amul Butter 100g</h3>
+
+            <p class="price">₹62</p>
+
+            <button class="add-cart"
+                onclick="addToCart('Amul Butter 100g',62,'images/amul-butter.jpg')">
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="images/thumsup-200ml.jpg" alt="Thums Up 200ml">
+
+            <h3>Thums Up 200ml</h3>
+
+            <p class="price">₹20</p>
+
+            <button class="add-cart"
+                onclick="addToCart('Thums Up 200ml',20,'images/thumsup-200ml.jpg')">
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="images/thumsup-1ltr.jpg" alt="Thums Up 1L">
+
+            <h3>Thums Up 1L</h3>
+
+            <p class="price">₹45</p>
+
+            <button class="add-cart"
+                onclick="addToCart('Thums Up 1L',45,'images/thumsup-1ltr.jpg')">
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="images/thumsup-2ltr.jpg" alt="Thums Up 2L">
+
+            <h3>Thums Up 2L</h3>
+
+            <p class="price">₹85</p>
+
+            <button class="add-cart"
+                onclick="addToCart('Thums Up 2L',85,'images/thumsup-2ltr.jpg')">
+                Add To Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Offer -->
+
+<section class="offer">
+
+    <h2>🔥 Grocery Offers</h2>
+
+    <p>Save More On Daily Essentials</p>
+
+</section>
+
+
+<!-- Delivery -->
+
+<section class="delivery">
+
+    <div class="delivery-grid">
+
+        <div>
+            🚚
+            <h3>Fast Delivery</h3>
+            <p>Same Day Delivery</p>
+        </div>
+
+        <div>
+            💰
+            <h3>Best Price</h3>
+            <p>Affordable Grocery</p>
+        </div>
+
+        <div>
+            🔒
+            <h3>Secure Payment</h3>
+            <p>UPI Available</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 PRAPTI BAZAAR
+        <br>
+        Online Grocery Store
+    </p>
+
+</footer>
+
+
+<a href="cart.html" class="floating-cart">
+    <i class="fa fa-shopping-cart"></i>
+</a>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
